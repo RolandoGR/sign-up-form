@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sign-up form</title>
 </head>
 <body>
-    
+    <main>
+        <div class="photoContainer">   
+            <div class="photoText">
+                Photo by <a href="https://unsplash.com/@kekse_und_ich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Svitlana</a> on <a href="https://unsplash.com/t/food-drink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mainText">This is not a real company, but it just might look like a real smoothie subscription service.
+                <br> <br> Sign up now and get started
+            </div>
+            <form method="#0" action="#0">
+                <div class="leftFormColumn">
+
+                    <div class="formElement">
+                        <label for="name">Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="formElement">
+                        <label for="email">Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="formElement">
+                        <label for="password">Password</label>
+                        <input type="password" required>
+                    </div>
+                </div>
+                <div class="rightFormColumn">
+                    <div class="formElement">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="formElement">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" required>
+                    </div>         
+                    <div class="formElement">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" required>
+                    </div>   
+                </div>
+            </form>
+            <div class="createAccount">
+                <button class="createAccBtn" type="submit">Create Account</button>
+                <div class="loginText">Already have an account? 
+                    <a href="#">Log in</a>
+                </div>
+            </div>
+        </div>
+    </main>    
+    <footer>Built by RolandoGR</footer>
+
+
 </body>
 </html>
