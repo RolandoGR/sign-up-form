@@ -396,10 +396,18 @@ a:link {
   text-align: left;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
-  height: calc(100vh/4);
+  height: calc(100vh/5);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: end;
  }
+
+
+.formElement>label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.7rem ;
+}
 
    .mainText, form {
   padding: 45px;
@@ -415,15 +423,15 @@ a:link {
   margin: 30px 30px 0px 45px;
   background-color: var(--red-theme);
   color: white;
-  transition: 0.3s;
+  transition: 0.5s;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
-  border-style: 1px;
+  border-width: 2px;
   border-color: white;
  }
 
  .createAccBtn:hover {
   background-color: rgb(99, 180, 77);
-  border-color: rgb(15, 107, 27);
+  border-color: rgb(99, 180, 77);
   cursor: pointer;
   }
 
@@ -432,6 +440,7 @@ a:link {
   height: calc(100vh/4);
   gap: 40px;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+  background-color: rgba(253, 223, 228, 0.897);
 
  }
 
@@ -447,11 +456,19 @@ a:link {
  }
   .photoContainer {
     position: relative;
+    display: flex;
+    align-items: center;
     background-image: url("./img/svitlana-9UuaEkQeizU-unsplash.jpg"); 
     background-size: cover;
     height: var(--main);
     width: 600px;
     text-align: center;
+  }
+
+  .logo>img {
+    height: auto;
+    width: 600px;
+  opacity: 0.3;
   }
 
   .photoText {
@@ -465,11 +482,12 @@ a:link {
     text-shadow: 3px 3px 2px rgb(0, 0, 0);}
 
   footer {
+    display: flex;
+    flex-direction: column;
     font-family: 'Lobster Two','Roboto', sans-serif;
     font-size: large;
     color: rgb(255, 255, 255);
     text-align: center;
-    line-height: 5vh;
     height: 5vh;
     background-color: var(--red-theme);
   }
