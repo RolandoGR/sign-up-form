@@ -384,6 +384,22 @@ a:link {
     text-decoration: none;
 
   } 
+
+  input {
+   border-color: #E5E7EB;
+   border-radius: 5px;
+
+  }
+
+
+  input:invalid:focus {
+    border-color:red;
+  }
+
+  input:valid {
+    border-color: blue;
+  }
+
  .container {
   display: flex;
   flex-direction: column;
@@ -409,7 +425,7 @@ a:link {
   font-size: 0.7rem ;
 }
 
-   .mainText, form {
+   .mainText, .inputs {
   padding: 45px;
  }
 
@@ -417,6 +433,14 @@ a:link {
   padding: 20px 0px 45px 45px;
  }
 
+ .loginText>a:link {
+  color: var(--red-theme);
+}
+
+.loginText>a:hover { 
+  color: rgb(40, 175, 13);
+  text-decoration: none;
+} 
  .createAccBtn {
   border-radius: 10px;
   padding: 7px 20px;
@@ -435,7 +459,9 @@ a:link {
   cursor: pointer;
   }
 
- form {
+
+
+ .inputs {
   display: flex;
   height: calc(100vh/4);
   gap: 40px;
@@ -447,6 +473,7 @@ a:link {
  .leftFormColumn, .rightFormColumn {
   display: flex;
   flex-direction: column;
+  justify-content: center;
  }
 
  .formElement {
@@ -467,7 +494,7 @@ a:link {
 
   .logo>img {
     height: auto;
-    width: 600px;
+    width: 100%;
   opacity: 0.3;
   }
 

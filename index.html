@@ -24,42 +24,43 @@
                 </p>
             </div>
             <form method="#0" action="#0">
-                <div class="leftFormColumn">
-
-                    <div class="formElement">
-                        <label for="name">Name</label>
-                        <input type="text" required>
+                <div class="inputs">
+                    <div class="leftFormColumn">
+                        <div class="formElement">
+                            <label for="name">Name</label>
+                            <input type="text" name="firstName" id="firstName"required>
+                        </div>
+                        <div class="formElement">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="formElement">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
                     </div>
-                    <div class="formElement">
-                        <label for="email">Email</label>
-                        <input type="email" required>
-                    </div>
-                    <div class="formElement">
-                        <label for="password">Password</label>
-                        <input type="password" required>
+                    <div class="rightFormColumn">
+                        <div class="formElement">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" required>
+                        </div>
+                        <div class="formElement">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="text" name="phoneNumber" id="phoneNumber" required>
+                        </div>
+                        <div class="formElement">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required>
+                        </div>
                     </div>
                 </div>
-                <div class="rightFormColumn">
-                    <div class="formElement">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" required>
+                <button class="createAccBtn" type="submit">Create Account</button>
+                <div class="createAccount">
+                    <div class="loginText">Already have an account? 
+                        <a href="#">Log in</a>
                     </div>
-                    <div class="formElement">
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="text" required>
-                    </div>         
-                    <div class="formElement">
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" required>
-                    </div>   
                 </div>
             </form>
-            <div class="createAccount">
-                <button class="createAccBtn" type="submit">Create Account</button>
-                <div class="loginText">Already have an account? 
-                    <a href="#">Log in</a>
-                </div>
-            </div>
         </div>
     </main>    
     <footer>
